@@ -8,7 +8,10 @@ export ZSH="/Users/jcarr4/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="agnoster"
+# ZSH_THEME="afowler"
+# ZSH_THEME="dallas"
+# ZSH_THEME="gallifrey"
+ZSH_THEME="geoffgarside"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -119,6 +122,7 @@ alias edit="vi"
 alias vir="vi -R"
 alias tf="terraform"
 alias tfp="terraform plan"
+alias gs="git status"
 
 function grp() {
   grep -rn "$1" ./
