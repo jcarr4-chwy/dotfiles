@@ -20,7 +20,7 @@ ZSH_THEME="geoffgarside"
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="false"
+CASE_SENSITIVE="false"
 
 # Uncomment the following line to use hyphen-insensitive completion.
 # Case-sensitive completion must be off. _ and - will be interchangeable.
@@ -71,13 +71,12 @@ ZSH_THEME="geoffgarside"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+
 plugins=(git)
-
 ZSH_DISABLE_COMPFIX="true"
-
 source $ZSH/oh-my-zsh.sh
-
 ssh-add -K
+export PATH="$PATH:/Users/jcarr4/Library/Python/2.7/bin"
 
 # User configuration
 
