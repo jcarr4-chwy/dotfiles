@@ -77,6 +77,8 @@ ZSH_DISABLE_COMPFIX="true"
 source $ZSH/oh-my-zsh.sh
 ssh-add -K
 export PATH="$PATH:/Users/jcarr4/Library/Python/2.7/bin"
+export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
+export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
 
 # User configuration
 
@@ -122,6 +124,8 @@ alias vir="vi -R"
 alias tf="terraform"
 alias tfp="terraform plan"
 alias gs="git status"
+alias j8='export JAVA_HOME=$JAVA_8_HOME'
+alias j11='export JAVA_HOME=$JAVA_11_HOME'
 
 function grp() {
   grep -rn "$1" ./
