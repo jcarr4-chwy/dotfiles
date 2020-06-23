@@ -1,5 +1,7 @@
 let g:airline#extensions#tabline#enabled = 1
 
+highlight! link SignColumn LineNr
+
 syntax enable
 filetype plugin indent on
 set cursorline

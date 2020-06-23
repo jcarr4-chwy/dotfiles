@@ -128,5 +128,5 @@ alias j8='export JAVA_HOME=$JAVA_8_HOME'
 alias j11='export JAVA_HOME=$JAVA_11_HOME'
 
 function grp() {
-  grep -rn "$1" ./
+  grep -rnI "$1" ./
 }
