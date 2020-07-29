@@ -9,9 +9,7 @@ export ZSH="/Users/jcarr4/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="afowler"
-# ZSH_THEME="dallas"
-# ZSH_THEME="gallifrey"
-ZSH_THEME="geoffgarside"
+ZSH_THEME="jcarr"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -20,7 +18,7 @@ ZSH_THEME="geoffgarside"
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
-CASE_SENSITIVE="false"
+CASE_SENSITIVE="true"
 
 # Uncomment the following line to use hyphen-insensitive completion.
 # Case-sensitive completion must be off. _ and - will be interchangeable.
@@ -105,13 +103,13 @@ export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
 
 alias zource="source ~/.zshrc"
 alias vimrc="vi ~/.vimrc"
 alias zshrc="vi ~/.zshrc"
-alias tre="tree"
-alias tl="tree -L 1"
 alias tref="tree -f"
+alias L2="tree -L 2"
 alias zz="open -a /System/Library/CoreServices/ScreenSaverEngine.app"
 alias v="vi"
 alias ci="vi"
@@ -126,7 +124,10 @@ alias tfp="terraform plan"
 alias gs="git status"
 alias j8='export JAVA_HOME=$JAVA_8_HOME'
 alias j11='export JAVA_HOME=$JAVA_11_HOME'
+alias clex="clear; exit"
 
 function grp() {
   grep -rnI "$1" ./
 }
+
+tmux

@@ -1,4 +1,5 @@
 let g:airline#extensions#tabline#enabled = 1
+let g:terraform_align=1
 
 highlight! link SignColumn LineNr
 
@@ -23,9 +24,10 @@ set backspace=indent,eol,start
 set visualbell
 set encoding=utf-8
 set t_Co=256
+set background=dark
 set fillchars+=stl:\ ,stlnc:\
-set term=xterm-256color
-set termencoding=utf-8
+" set term=xterm-256color
+" set termencoding=utf-8
 set laststatus=2
 
 " Relative or absolute number lines

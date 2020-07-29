@@ -1,0 +1,37 @@
+---
+env:
+  TERM: 'xterm-256color'
+window:
+  dimensions:
+    columns: 150
+    lines: 50
+  decorations: full
+font:
+  size: 20.0
+  use_thin_strokes: true
+draw_bold_text_with_bright_colors: true
+colors:
+  primary:
+    background: '#292c3e'
+    foreground: '#ebebeb'
+  cursor:
+   text: '#ff261e'
+   cursor: '#ffffff'
+  normal:
+    black:   '#0d0d0d'
+    red:     '#ff301B'
+    green:   '#a0e521'
+    yellow:  '#ffc620'
+    blue:    '#1ba6fA'
+    magenta: '#8763b8'
+    cyan:    '#21deeF'
+    white:   '#ebebeB'
+  bright:
+    black:   '#6d7070'
+    red:     '#ff4352'
+    green:   '#b8e466'
+    yellow:  '#ffd750'
+    blue:    '#1ba6fA'
+    magenta: '#a578eA'
+    cyan:    '#73fbf1'
+    white:   '#fefef8'
