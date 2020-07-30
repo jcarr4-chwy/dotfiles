@@ -3,9 +3,13 @@ env:
   TERM: 'xterm-256color'
 window:
   dimensions:
-    columns: 150
-    lines: 50
+    columns: 120
+    lines: 40
   decorations: full
+shell:
+  program: /usr/local/bin/tmux
+  args:
+     - -u
 font:
   size: 20.0
   use_thin_strokes: true
@@ -15,23 +19,47 @@ colors:
     background: '#292c3e'
     foreground: '#ebebeb'
   cursor:
-   text: '#ff261e'
-   cursor: '#ffffff'
+   text:        '#ff261e'
+   cursor:      '#ffffff'
   normal:
-    black:   '#0d0d0d'
-    red:     '#ff301B'
-    green:   '#a0e521'
-    yellow:  '#ffc620'
-    blue:    '#1ba6fA'
-    magenta: '#8763b8'
-    cyan:    '#21deeF'
-    white:   '#ebebeB'
+    black:      '#0d0d0d'
+    red:        '#ff301B'
+    green:      '#a0e521'
+    yellow:     '#ffc620'
+    blue:       '#1ba6fA'
+    magenta:    '#8763b8'
+    cyan:       '#21deeF'
+    white:      '#ebebeB'
   bright:
-    black:   '#6d7070'
-    red:     '#ff4352'
-    green:   '#b8e466'
-    yellow:  '#ffd750'
-    blue:    '#1ba6fA'
-    magenta: '#a578eA'
-    cyan:    '#73fbf1'
-    white:   '#fefef8'
+    black:      '#6d7070'
+    red:        '#ff4352'
+    green:      '#b8e466'
+    yellow:     '#ffd750'
+    blue:       '#1ba6fA'
+    magenta:    '#a578eA'
+    cyan:       '#73fbf1'
+    white:      '#fefef8'
+key_bindings:
+  - { key: N,        mods: Command,       action: SpawnNewInstance }
+  - { key: T,        mods: Command,       chars: "\x02\x63" }
+  - { key: R,        mods: Command,       chars: "\x02\x2c" }
+  - { key: W,        mods: Command,       chars: "\x02\x78" }
+  - { key: Tab,      mods: Control,       chars: "\x02\x6e" }
+  - { key: Tab,      mods: Control|Shift, chars: "\x02\x70" }
+  - { key: D,        mods: Command,       chars: "\x02\x25" }
+  - { key: D,        mods: Command|Shift, chars: "\x02\x22" }
+  - { key: LBracket, mods: Command,       chars: "\x02\x6f" }
+  - { key: RBracket, mods: Command,       chars: "\x02\x6f" }
+  - { key: Up,       mods: Command,       chars: "\x02\x1b\x5b\x41" }
+  - { key: Down,     mods: Command,       chars: "\x02\x1b\x5b\x42" }
+  - { key: Right,    mods: Command,       chars: "\x02\x1b\x5b\x43" }
+  - { key: Left,     mods: Command,       chars: "\x02\x1b\x5b\x44" }
+  - { key: Up,       mods: Command|Shift, chars: "\x02\x1b\x1b\x5b\x41" }
+  - { key: Down,     mods: Command|Shift, chars: "\x02\x1b\x1b\x5b\x42" }
+  - { key: Right,    mods: Command|Shift, chars: "\x02\x1b\x1b\x5b\x43" }
+  - { key: Left,     mods: Command|Shift, chars: "\x02\x1b\x1b\x5b\x44" }
+  - { key: Key1,     mods: Command,       chars: "\x02\x30" }
+  - { key: Key2,     mods: Command,       chars: "\x02\x31" }
+  - { key: Key3,     mods: Command,       chars: "\x02\x32" }
+  - { key: Key4,     mods: Command,       chars: "\x02\x33" }
+  - { key: Key5,     mods: Command,       chars: "\x02\x34" }

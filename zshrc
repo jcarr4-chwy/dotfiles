@@ -129,5 +129,3 @@ alias clex="clear; exit"
 function grp() {
   grep -rnI "$1" ./
 }
-
-tmux
